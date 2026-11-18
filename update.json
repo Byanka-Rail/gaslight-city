@@ -1,8 +1,8 @@
 {
-  "version": "9.62.0",
-  "build": 9062000,
-  "file": "GASLIGHT_CITY_v9.62.0.html",
-  "sha256": "b3945f2686322ce86bd42708e5aa60a16f125111b8863493cb26f0b8e469bce0",
-  "notes": "곧은 대각 대로와 삼각형 모서리 건물",
+  "version": "9.63.0",
+  "build": 9063000,
+  "file": "GASLIGHT_CITY_v9.63.0.html",
+  "sha256": "a6c7bf3334951ebcb6edabab2c9fe0a2675cb136311b8abe9e749ac5c95555f4",
+  "notes": "도심을 중정형 석조 가구로 — 공장은 바깥으로",
   "mandatory": false
 }
