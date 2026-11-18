@@ -1,8 +1,8 @@
 {
-  "version": "9.66.0",
-  "build": 9066000,
-  "file": "GASLIGHT_CITY_v9.66.0.html",
-  "sha256": "70cc7f0128f8e6cd9255f99993dd147790cee5d3335f986e5485f0eb76fde6e6",
-  "notes": "메뉴 정리: 큰 탭 6개 · 카드 · 자주 쓰는 것 위, 나머지 접기",
+  "version": "9.67.0",
+  "build": 9067000,
+  "file": "GASLIGHT_CITY_v9.67.0.html",
+  "sha256": "7ce4eb4096e0a97b679fb82489d8fd20e636c656cea963cbe1c37c0b9700c168",
+  "notes": "그림 LOD: 멀리 볼 때 세부 줄임",
   "mandatory": false
 }
