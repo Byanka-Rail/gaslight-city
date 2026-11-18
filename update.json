@@ -1,8 +1,8 @@
 {
-  "version": "9.63.0",
-  "build": 9063000,
-  "file": "GASLIGHT_CITY_v9.63.0.html",
-  "sha256": "a6c7bf3334951ebcb6edabab2c9fe0a2675cb136311b8abe9e749ac5c95555f4",
-  "notes": "도심을 중정형 석조 가구로 — 공장은 바깥으로",
+  "version": "9.63.1",
+  "build": 9063001,
+  "file": "GASLIGHT_CITY_v9.63.1.html",
+  "sha256": "9edec265104b6edcf2636e5e311083e09f3b33e22c89397f44af629462050724",
+  "notes": "안팎이 뒤집힌 듯 보이던 건물(삼각형 옆집과의 맞벽) 고침",
   "mandatory": false
 }
