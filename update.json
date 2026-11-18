@@ -1,8 +1,8 @@
 {
-  "version": "9.65.0",
-  "build": 9065000,
-  "file": "GASLIGHT_CITY_v9.65.0.html",
-  "sha256": "d18316428c3f63d22493650d992b2194214a18c693b38c2984efca74285b4358",
-  "notes": "가구 키우기 · 구시가 골목 · 바르셀로나 팔각 교차로",
+  "version": "9.66.0",
+  "build": 9066000,
+  "file": "GASLIGHT_CITY_v9.66.0.html",
+  "sha256": "70cc7f0128f8e6cd9255f99993dd147790cee5d3335f986e5485f0eb76fde6e6",
+  "notes": "메뉴 정리: 큰 탭 6개 · 카드 · 자주 쓰는 것 위, 나머지 접기",
   "mandatory": false
 }
