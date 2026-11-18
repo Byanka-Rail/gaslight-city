@@ -1,8 +1,8 @@
 {
-  "version": "9.61.0",
-  "build": 9061000,
-  "file": "GASLIGHT_CITY_v9.61.0.html",
-  "sha256": "1627ba0322fb432c172fc250c99f96e7fbe4e2c6a91ad68c6b5871a8bfce3c2c",
-  "notes": "논밭·가게 간판·물가·굴뚝 세부 묘사",
+  "version": "9.62.0",
+  "build": 9062000,
+  "file": "GASLIGHT_CITY_v9.62.0.html",
+  "sha256": "b3945f2686322ce86bd42708e5aa60a16f125111b8863493cb26f0b8e469bce0",
+  "notes": "곧은 대각 대로와 삼각형 모서리 건물",
   "mandatory": false
 }
