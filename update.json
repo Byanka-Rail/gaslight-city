@@ -1,8 +1,8 @@
 {
-  "version": "9.64.0",
-  "build": 9064000,
-  "file": "GASLIGHT_CITY_v9.64.0.html",
-  "sha256": "af7969ba083f9d765992f3517b3643a83bec663b7913aa2f16e8c7744b01b834",
-  "notes": "도심 큰 건물 띄우기 · 삼각형 건물 모서리 무디게",
+  "version": "9.65.0",
+  "build": 9065000,
+  "file": "GASLIGHT_CITY_v9.65.0.html",
+  "sha256": "d18316428c3f63d22493650d992b2194214a18c693b38c2984efca74285b4358",
+  "notes": "가구 키우기 · 구시가 골목 · 바르셀로나 팔각 교차로",
   "mandatory": false
 }
