@@ -1,0 +1,62 @@
+name: Build Android APK
+
+permissions:
+  contents: write
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - 'android/**'
+      - '.github/workflows/build-apk.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: android
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      # ubuntu 러너에는 Android SDK 가 이미 있다 (setup-android 액션이 깨져서 바꿈).
+      - name: Install SDK packages
+        run: |
+          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"
+          test -x "$SDKM" || { echo "sdkmanager not found at $SDKM"; ls -la "$ANDROID_HOME" || true; exit 1; }
+          yes | "$SDKM" --licenses > /dev/null || true
+          "$SDKM" "platforms;android-35" "build-tools;35.0.0"
+
+      - name: Gradle 8.9
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+
+      - name: Build debug APK
+        run: gradle assembleDebug --stacktrace
+
+      - name: Rename APK
+        run: cp app/build/outputs/apk/debug/app-debug.apk GaslightCity.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: GASLIGHT_CITY_APK
+          path: android/GaslightCity.apk
+
+      # 휴대폰에서 받기 쉽게: 'apk-latest' 릴리스에 늘 최신 APK 를 올려 둔다
+      - name: Publish to release apk-latest
+        if: github.event_name != 'pull_request'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete apk-latest --yes --cleanup-tag || true
+          gh release create apk-latest GaslightCity.apk --title "가스등 도시 1851 APK (최신)" --notes "설치용 APK. 게임 내용 업데이트는 앱 안에서 자동으로 받습니다." --latest
